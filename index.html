@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Memes Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title" class="header">Memes Form</h1>
+    <p id="description" class="header">We're here to laugh</p>
+    <form id="survey-form">
+     <fieldset>
+       <label id="name-label" for="name">Your name<input id="name" type="text" placeholder="Matthew McConaughey" required></label> 
+     <label id="email-label" for="email">Your email<input id="email" type="email" placeholder="HER@mail.com" required></label>
+     <label id="number-label" for="number">How many hours per day do you spend for scrolling memes?<input id="number" type="number" placeholder="100500" min="1" max="100501"></label>
+     </fieldset>
+     <fieldset>
+     <label for="dropdown">There are two chairs...
+       <select id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">peaks</option>
+        <option value="2">dicks</option>
+         </select>
+       </label>
+       </fieldset>
+      <fieldset>
+        <legend>You choose...</legend>
+      <label for="end-world"><input type="radio" id="end-world" name="world-memes" value="end-world" class="inline">End world suffernig</label>
+      <label for="end-memes"><input type="radio" id="end-memes" name="world-memes" value="end-memes" class="inline">End memes</label>
+      </fieldset>
+    <fieldset>
+    <legend>What's your relationship with memes?</legend>
+      <label for="love"><input id="love" type="checkbox" name="relationship" value="love" checked class="inline">Love them</label>
+      <label for="hate"><input id="hate" type="checkbox" name="relationship" value="hate" class="inline">Hate them</label>
+      <label for="produce"><input id="produce" type="checkbox" name="relationship" value="produce" class="inline">Produce them</label>
+      <label for="me"><input id="me" type="checkbox" name="relationship" value="me" class="inline">I am a meme</label>
+    </fieldset>
+    <fieldset>
+      <label for="favourite">Tell me about your favourite meme<textarea id="favourite" rows="3" cols="30" placeholder="Kilroy was here..."></textarea></label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit">
+    </form>
+    </body>
+  </html>
